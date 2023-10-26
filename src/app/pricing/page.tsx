@@ -124,13 +124,13 @@ const Page = () => {
                     )}
 
                     <div className='p-5'>
-                      <h3 className='my-3 text-center font-display text-3xl font-bold'>
+                      <h3 className='my-3 text-center font-display text-3xl font-bold text-gray-600'>
                         {plan}
                       </h3>
                       <p className='text-gray-500'>
                         {tagline}
                       </p>
-                      <p className='my-5 font-display text-6xl font-semibold'>
+                      <p className='my-5 font-display text-6xl font-semibold text-gray-400'>
                         ${price}
                       </p>
                       <p className='text-gray-500'>
@@ -140,7 +140,7 @@ const Page = () => {
 
                     <div className='flex h-20 items-center justify-center border-b border-t border-gray-200 bg-gray-50'>
                       <div className='flex items-center space-x-1'>
-                        <p>
+                        <p className='text-gray-500'>
                           {quota.toLocaleString()} PDFs/mo
                           included
                         </p>
@@ -228,7 +228,7 @@ const Page = () => {
                         <Link
                           href='/sign-in'
                           className={buttonVariants({
-                            className: 'w-full',
+                            className: 'w-full bg-gradient-to-r from-blue-600 to-cyan-600',
                           })}>
                           {user ? 'Upgrade now' : 'Sign up'}
                           <ArrowRight className='h-5 w-5 ml-1.5' />
